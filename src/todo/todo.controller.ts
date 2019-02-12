@@ -7,6 +7,6 @@ export class TodoController {
 
   @Get()
   findAll() {
-    return this.toodService.getTodos();
+    return this.toodService.findAll();
   }
 }
