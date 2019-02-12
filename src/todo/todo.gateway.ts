@@ -7,7 +7,7 @@ export class TodoGateway {
   constructor(private readonly todoService: TodoService) {}
 
   @SubscribeMessage('initialize')
-  async identity(client: Socket, payload: any): Promise<any> {
+  async initialize(client: Socket, payload: any): Promise<any> {
     const todos = this.todoService.findAll();
     client.emit('todos', todos);
   }
