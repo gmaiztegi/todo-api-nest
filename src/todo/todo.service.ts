@@ -10,8 +10,10 @@ export class TodoService {
     return this.todos;
   }
 
-  add(label: string) {
-    this.todos.push({ _id: generate(), label });
+  add(label: string): string {
+    const id = generate();
+    this.todos.push({ _id: id, label });
+    return id;
   }
 
   delete(id: string) {
