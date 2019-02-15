@@ -1,0 +1,11 @@
+.git/
+.gitignore
+
+.env
+
+coverage/
+
+.dockerignore
+Dockerfile
+
+node_modules
