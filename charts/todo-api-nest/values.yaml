@@ -3,8 +3,8 @@
 # Declare variables to be passed into your templates.
 replicaCount: 1
 image:
-  repository: draft
-  tag: dev
+  repository: jenkins-x-docker-registry.jx:5000/gmaiztegi/todo-api-nest
+  tag: 0.0.3
   pullPolicy: IfNotPresent
 service:
   name: todo-api-nest
